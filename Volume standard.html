@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conseils de Mixage — MistergloKin</title>
+  <style>
+    :root{
+      --bg:#0e0e10;
+      --card:#141416;
+      --glass:rgba(255,255,255,0.04);
+      --text:#e9eef1;
+      --muted:#a8b0b6;
+      --accent:#34c759;
+      --accent-2:#2ecc71;
+      --radius:18px;
+      --soft-shadow: -8px -8px 20px rgba(255,255,255,0.02),
+                     8px 8px 24px rgba(0,0,0,0.6);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; 
+      background:linear-gradient(180deg,#0b0b0c 0%, #0e0e10 100%);
+      color:var(--text); 
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
+      padding:36px;
+    }
+    .container{max-width:1200px; margin:0 auto;}
+    header{margin-bottom:22px}
+    header h1{
+      font-size:1.9rem; 
+      margin:0; 
+      background:linear-gradient(90deg,var(--accent),var(--accent-2)); 
+      -webkit-background-clip:text; 
+      -webkit-text-fill-color:transparent
+    }
+    header p{margin:0; color:var(--muted)}
+    h2.section-title{
+      margin-top:40px;
+      font-size:1.4rem;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2)); 
+      -webkit-background-clip:text; 
+      -webkit-text-fill-color:transparent
+    }
+    .grid{
+      display:grid; 
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); 
+      gap:20px; 
+      margin-top:18px
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); 
+      border-radius:var(--radius); 
+      padding:20px; 
+      box-shadow:var(--soft-shadow); 
+      border:1px solid rgba(255,255,255,0.02); 
+      transition:transform .16s ease
+    }
+    .card:hover{transform:translateY(-6px)}
+    .card h3{margin:8px 0; font-size:1.05rem}
+    .card p{margin:0; color:var(--muted); line-height:1.5}
+    footer{margin-top:40px; color:var(--muted); font-size:0.9rem}
+    @media (max-width:520px){body{padding:18px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎚️ Conseils de Mixage & Volumes Standard</h1>
+      <p>Par MistergloKin — Studio & Formations</p>
+    </header>
+
+    <!-- Section : Volumes Standards -->
+    <h2 class="section-title">🔊 Volumes de départ (Faders)</h2>
+    <section class="grid">
+      <article class="card"><h3>🎤 Voix Lead</h3><p>-10 à -6 dB<br><em>Astuce :</em> toujours devant, référence du mix.</p></article>
+      <article class="card"><h3>🎤 Back Vocals</h3><p>-12 à -18 dB<br><em>Astuce :</em> plus bas que la lead, groupés pour homogénéité.</p></article>
+      <article class="card"><h3>🎸 Guitare acoustique</h3><p>-14 à -18 dB<br><em>Astuce :</em> soutien discret, équilibre avec piano/EP.</p></article>
+      <article class="card"><h3>🎸 Guitare électrique</h3><p>-12 à -16 dB<br><em>Astuce :</em> si lead → +2/3 dB au-dessus de la rythmique.</p></article>
+      <article class="card"><h3>🎹 Piano acoustique</h3><p>-12 à -16 dB<br><em>Astuce :</em> ne pas masquer guitare acoustique.</p></article>
+      <article class="card"><h3>🎹 Electric Piano</h3><p>-14 à -18 dB<br><em>Astuce :</em> chaud et en arrière-plan sauf si solo (-10 dB).</p></article>
+      <article class="card"><h3>🎻 Strings / Pads</h3><p>-18 à -22 dB<br><em>Astuce :</em> enveloppe sonore, jamais en avant.</p></article>
+      <article class="card"><h3>🎸 Basse</h3><p>-8 à -10 dB<br><em>Astuce :</em> colle avec le kick.</p></article>
+      <article class="card"><h3>🥁 Kick</h3><p>-8 à -10 dB<br><em>Astuce :</em> parfois au-dessus de la basse en musique moderne.</p></article>
+      <article class="card"><h3>🥁 Snare</h3><p>-10 à -12 dB<br><em>Astuce :</em> punch sans écraser.</p></article>
+      <article class="card"><h3>🥁 Hi-Hat</h3><p>-16 à -20 dB<br><em>Astuce :</em> subtil, apporte la brillance.</p></article>
+      <article class="card"><h3>🥁 Toms</h3><p>-12 à -16 dB<br><em>Astuce :</em> plus fort seulement pendant les fills.</p></article>
+      <article class="card"><h3>🥁 Overheads</h3><p>-14 à -18 dB<br><em>Astuce :</em> apporte l’air et l’image globale.</p></article>
+      <article class="card">
+        <a href="index.html"><h2>ACCEUIL</h2></a>
+      </article>
+    </section>
+
+    <footer>© 2025 MistergloKin — Conseils pratiques pour progresser en mixage</footer>
+  </div>
+</body>
+</html>
