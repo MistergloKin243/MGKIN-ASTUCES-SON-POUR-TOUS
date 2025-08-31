@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Astuces du Son Studio</title>
+  <style>
+    :root {
+      --bg:#121212;
+      --card:#1f1f1f;
+      --elev:#2a2a2a;
+      --text:#eaeaea;
+      --muted:#b3b3b3;
+      --accent:#34c759;
+      --border:rgba(255,255,255,0.08);
+      --radius:16px;
+      --shadow:0 10px 20px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box;}
+    body{margin:0; font:15px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; color:var(--text); background:var(--bg);}
+    a{text-decoration:none; color:inherit;}
+    h1,h2{margin:0;}
+    
+    header{padding:16px; display:flex; align-items:center; justify-content:space-between; background:rgba(18,18,18,.95); backdrop-filter:blur(8px);}
+    .logo{font-weight:700;}
+    
+    .hero{background:linear-gradient(135deg,#1f1f1f,#242424); margin:16px; padding:24px; border-radius:var(--radius); box-shadow:var(--shadow);}
+    .hero h1{font-size:28px; margin-bottom:12px;}
+    .hero p{color:var(--muted); margin-bottom:12px;}
+    
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;}
+    .btn{padding:12px 18px; border-radius:12px; border:none; font-weight:600; background:var(--elev); color:var(--text); transition:0.3s;}
+    .btn.primary{background:var(--accent); color:#081b0b;}
+    .btn:hover{opacity:0.85;}
+    
+    .tips{display:grid; gap:16px; margin:16px;}
+    .tip{display:flex; gap:12px; padding:16px; background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); transition:0.3s; cursor:pointer;}
+    .tip:hover{background:#242424;}
+    .tip img{width:60px; height:60px; border-radius:12px; object-fit:cover;}
+    .tip .content{flex:1;}
+    .tip .content h2{font-size:18px; margin-bottom:6px;}
+    .tip .content p{color:var(--muted);}
+    
+    .contact{margin:16px; display:flex; gap:12px; flex-wrap:wrap;}
+    .contact a{padding:12px 18px; border-radius:12px; background:var(--accent); color:#081b0b; font-weight:600; text-align:center; flex:1 1 150px;}
+    
+    ::-webkit-scrollbar{height:8px; width:8px;}
+    ::-webkit-scrollbar-thumb{background:#3a3a3a; border-radius:8px;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Instruments FX">  MistergloKin
+    </div>
+    <div class="iconbtn"><img src="img/logo.png" alt="Instruments FX">👤</div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Astuces pour améliorer votre son ! 🎵</h1>
+    <p>Découvrez nos conseils pratiques pour le mixage, l’enregistrement et la production. Cliquez sur chaque astuce pour en savoir plus.</p>
+    <p>🚩Cliquez sur le texte pour voir le contenu, ne cliquez pas sur l'image pour voir le contenu</p>
+  </section>
+
+  <!-- Liste des astuces -->
+  <section class="tips">
+    <div class="tip" onclick="alert('Chaîne FX pour instruments : conseils détaillés')">
+      <img src="img/FX.jpeg" alt="Instruments FX">
+      <div class="content">
+        <h2>Chaîne FX Instruments</h2>
+        <a href="chaîne FX instruments.html"><p>Apprenez à organiser vos effets pour instruments et donner plus de profondeur à vos sons.</p></a>
+      </div>
+    </div>
+    <div class="tip" onclick="alert('Chaîne FX pour voix : guide complet')">
+      <img src="img/VOCAL.jpeg" alt="Voix FX">
+      <div class="content">
+        <h2>Chaîne FX Voix Standard</h2>
+        <a href="Chaîne FX voix standard.html"><p>Optimisez vos voix avec une chaîne d’effets claire et efficace.</p></a>
+      </div>
+    </div>
+    <div class="tip" onclick="alert('Compression standard expliquée')">
+      <img src="img/COMP.jpeg" alt="Compression">
+      <div class="content">
+        <h2>Compression Standard</h2>
+        <a href="Compression Standard.html"><p>Maîtrisez la compression pour donner du punch et homogénéité à vos pistes.</p></a>
+      </div>
+    </div>
+    <div class="tip" onclick="alert('Égalisation standard')">
+      <img src="img/EQ.jpeg" alt="EQ">
+      <div class="content">
+        <h2>EQ Standard</h2>
+        <a href="EQ standard.html"><p>Apprenez à sculpter vos sons avec un égaliseur standard efficace.</p></a>
+      </div>
+    </div>
+    <div class="tip" onclick="alert('Effets importants pour vos mixes')">
+      <img src="img/PLU.jpeg" alt="FX">
+      <div class="content">
+        <h2>FX Importants Standard</h2>
+        <a href="FX importants standard.html"><p>Découvrez les effets essentiels pour chaque type de mix.</p></a>
+      </div>
+    </div>
+    <div class="tip" onclick="alert('Volume standard et réglages')">
+      <img src="img/VOL.jpeg" alt="Volume">
+      <div class="content">
+        <h2>Volume Standard</h2>
+        <a href="Volume standard.html"><p>Gardez vos niveaux équilibrés pour un mix clair et professionnel.</p></a>
+      </div>
+    </div>
+    <div class="tip" onclick="alert('Volume standard et réglages')">
+      <img src="img/MIXE3.jpeg" alt="Volume">
+      <div class="content">
+        <h2>10 Conseils pour le mixe</h2>
+        <a href="10 Conseils pour le mixe.html"><p>Gardez vos niveaux équilibrés pour un mix clair et professionnel.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact rapide -->
+  <div class="contact">
+    <a href="https://wa.me/243820026421" target="_blank">WhatsApp</a>
+    <a href="index.html">Home</a>
+    <a href="https://www.facebook.com/profile.php?id=61556134899104" target="_blank">Facebook</a>
+  </div>
+
+</body>
+</html>
